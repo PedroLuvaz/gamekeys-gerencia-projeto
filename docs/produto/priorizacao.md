@@ -71,7 +71,7 @@ deploy) serão criados no refinamento de janeiro, porque dependem do que a Relea
 - 3 integrantes dedicando cerca de **10 horas por semana** cada ao projeto, incluindo as aulas de desenvolvimento
 - **1 ponto ≈ 3 horas** de trabalho de uma pessoa
 - Isso dá **2 pontos por dia útil** da equipe (3 pessoas × 2 h por dia útil ÷ 3 h por ponto)
-- Feriados descontados: 20/11 (Consciência Negra) e Carnaval em 08 e 09/02/2027
+- Feriado descontado: 20/11 (Consciência Negra). Os períodos das sprints seguem a programação da disciplina
 
 | Sprint | Dias úteis | Capacidade (pts) | Carga planejada (pts) | Folga (pts) | Observação |
 |---|---|---|---|---|---|
@@ -80,7 +80,7 @@ deploy) serão criados no refinamento de janeiro, porque dependem do que a Relea
 | 3 | 7 | 14 | 13 | 1 | Feriado em 20/11. Contém a história de maior risco (#20); se travar, #21 é o primeiro a ir para a Sprint 4 |
 | 4 | 8 | 16 | 14 | 2 | Primeiro item cortável: #25 |
 | 5 | 6 | 12 | 10 | 2 | Sprint curta (8 dias corridos) |
-| 6 | 11 | 22 | 15 | 7 | Carnaval em 08 e 09/02. Folga reservada ao Demo Day e aos itens de encerramento |
+| 6 | 13 | 26 | 15 | 11 | Sprint longa (6 aulas). Folga reservada ao Demo Day e aos itens de encerramento |
 
 - **Total planejado nas Sprints 1 a 6:** 80 pontos
 - **Prioridade Baixa, sem sprint:** 8 pontos (#34 #35 #36 #37)
