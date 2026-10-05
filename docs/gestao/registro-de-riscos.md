@@ -47,7 +47,7 @@ retrospectiva**: reavaliar exposição, encerrar o que não se aplica mais, abri
 - **Resposta:** a Release 3 termina com a `main` estável, a documentação em dia e uma tag. Antes do
   recesso, o PO deixa o Backlog da Release 4 refinado e o SM registra na ata o "estado de retomada"
   (o que está pronto, o que falta, quem faz o quê). Combinar um contato curto no fim de janeiro.
-- **Gatilho:** Backlog da Release 4 sem itens prontos para o Planning de 22/12.
+- **Gatilho:** Backlog da Release 4 sem itens refinados na Review de 22/12, última aula antes do recesso.
 
 ### RSK-02 — Semana de prova · exposição 15
 - **Resposta:** a capacidade inicial é conservadora. Quem sabe que terá semana pesada avisa no Planning.
