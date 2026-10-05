@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Definition of Done e regras de negócio
+    url: https://github.com/PedroLuvaz/gamekeys-gerencia-projeto/tree/main/docs/produto
+    about: Consulte antes de abrir ou fechar uma história.
