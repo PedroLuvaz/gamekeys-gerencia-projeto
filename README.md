@@ -51,12 +51,12 @@ Ambiente de desenvolvimento: [`docs/devops/ambiente-de-desenvolvimento.md`](docs
 
 ## 4. Equipe e papéis
 
-| Integrante | Papel na Release 1 (Sprints 0 e 1) |
-|---|---|
-| Pedro Lucas Vaz de Andrade | **Product Owner** |
-| Wagner Tiburcio da Silva Junior | **QA** (Analista de Qualidade) |
-| Rodrigo Almeida Gomes | **Scrum Master** |
-| _(a definir pela equipe)_ | **DevOps** — papel acumulado por um dos integrantes na Release 1 |
+| Integrante | GitHub | Papel na Release 1 (Sprints 0 e 1) |
+|---|---|---|
+| Pedro Lucas Vaz de Andrade | [@PedroLuvaz](https://github.com/PedroLuvaz) | **Product Owner** |
+| Wagner Tiburcio da Silva Junior | [@Wagnerxxdd](https://github.com/Wagnerxxdd) | **QA** (Analista de Qualidade) |
+| Rodrigo Almeida Gomes | [@rodrigoalmei](https://github.com/rodrigoalmei) | **Scrum Master** |
+| _(a definir pela equipe)_ | — | **DevOps** — papel acumulado por um dos integrantes na Release 1 |
 
 Os papéis giram ao fim de cada release. Rodízio previsto na [programação da disciplina](#5-calendário):
 
@@ -71,7 +71,7 @@ Os papéis giram ao fim de cada release. Rodízio previsto na [programação da 
 
 | Sprint | Release | Período | Planning | Review + Retrospectiva |
 |---|---|---|---|---|
-| 0 | 1 | 06/10 a 15/10 | 06/10 (abertura) | 15/10 (interna) |
+| 0 | 1 | 06/10 a 15/10 | — (aulas de conteúdo) | — |
 | 1 | 1 | 20/10 a 29/10 | 20/10 | 29/10 · **fim da Release 1** |
 | 2 | 2 | 03/11 a 12/11 | 03/11 | 12/11 |
 | 3 | 2 | 17/11 a 26/11 | 17/11 | 26/11 · **fim da Release 2** |
