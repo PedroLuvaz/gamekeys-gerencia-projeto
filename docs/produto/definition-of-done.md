@@ -9,7 +9,7 @@ retrospectiva.
 |---|---|---|---|
 | [ ] | Pedro Lucas Vaz de Andrade | Product Owner | |
 | [ ] | Wagner Tiburcio da Silva Junior | QA e DevOps | |
-| [ ] | Rodrigo Almeida Gomes | Scrum Master | |
+| [x] | Rodrigo Almeida Gomes | Scrum Master | |
 
 ---
 
