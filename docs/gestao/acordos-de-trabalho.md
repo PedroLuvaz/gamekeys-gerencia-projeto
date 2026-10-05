@@ -9,7 +9,7 @@ Regras que o time combina para trabalhar junto. Se uma regra deixa de funcionar,
 |---|---|---|---|
 | [ ] | Pedro Lucas Vaz de Andrade | Product Owner | |
 | [ ] | Wagner Tiburcio da Silva Junior | QA e DevOps | |
-| [ ] | Rodrigo Almeida Gomes | Scrum Master | |
+| [x] | Rodrigo Almeida Gomes | Scrum Master | |
 
 ---
 
