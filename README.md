@@ -86,8 +86,8 @@ Cerimônias, horários e regras: [`docs/gestao/calendario-de-cerimonias.md`](doc
 
 | O quê | Onde |
 |---|---|
-| Quadro do time (GitHub Projects) | Aba **Projects** do repositório — configuração em [`docs/gestao/github-projects.md`](docs/gestao/github-projects.md) |
-| Product Backlog | [Issues](../../issues) com label `user-story`, ordenadas no quadro |
+| Quadro do time (GitHub Projects) | [GameKeys — Gerência de Projeto](https://github.com/users/PedroLuvaz/projects/2) · configuração em [`docs/gestao/github-projects.md`](docs/gestao/github-projects.md) |
+| Product Backlog | [Issues com label `user-story`](https://github.com/PedroLuvaz/gamekeys-gerencia-projeto/issues?q=label%3Auser-story), ordenadas no quadro |
 | Visão, escopo e regras de negócio | [`docs/produto/`](docs/produto) |
 | Priorização justificada e carga por sprint | [`docs/produto/priorizacao.md`](docs/produto/priorizacao.md) |
 | Definition of Ready e Definition of Done | [`docs/produto/definition-of-done.md`](docs/produto/definition-of-done.md) |
