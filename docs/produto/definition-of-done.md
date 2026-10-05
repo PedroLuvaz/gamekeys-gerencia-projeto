@@ -7,7 +7,7 @@ retrospectiva.
 
 | Aceite | Integrante | Papel (Release 1) | Data |
 |---|---|---|---|
-| [ ] | Pedro Lucas Vaz de Andrade | Product Owner | |
+| [x] | Pedro Lucas Vaz de Andrade | Product Owner | 05/10/2026 |
 | [x] | Wagner Tiburcio da Silva Junior | QA e DevOps | |
 | [x] | Rodrigo Almeida Gomes | Scrum Master | |
 
