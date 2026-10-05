@@ -4,8 +4,8 @@ O Sprint Goal é uma frase que diz **o resultado esperado da sprint**, e não um
 **não muda no meio da sprint**: se o time perceber que não entrega tudo, corta o item de menor prioridade
 e registra o corte na Review.
 
-Só o goal da Sprint 1 é compromisso do PO nesta etapa. Os demais são **previsões** e serão confirmados
-no Planning de cada sprint, a partir do velocity medido.
+Nesta etapa, só a **Sprint 1** tem proposta de goal e de itens, e só a Sprint 0 tem itens atribuídos no quadro.
+O goal e os itens das demais sprints são definidos no Planning de cada uma, a partir do velocity medido.
 
 ---
 
@@ -21,13 +21,15 @@ Itens: tarefas `[Sprint 0]` no quadro (#1 a #11).
 > **Um visitante consegue navegar pelo catálogo de jogos e abrir o detalhe de um jogo, e um cliente
 > consegue criar uma conta e entrar no sistema.**
 
-| Issue | Item | Pontos |
+| Issue | Item candidato | Pontos |
 |---|---|---|
 | #12 | Cadastro de cliente | 3 |
 | #13 | Login com e-mail e senha | 5 |
 | #14 | Listagem paginada de jogos | 5 |
 | #15 | Detalhe do jogo | 2 |
 | | **Total** | **15** |
+
+No quadro, essas histórias ficam **sem Sprint** até o Planning de 20/10, quando o time confirma o que cabe.
 
 **Como o goal será verificado na Review (29/10):** demonstração do roteiro abaixo, no ambiente local, com os
 dados de demonstração.
@@ -40,21 +42,16 @@ dados de demonstração.
 **O que é cortado primeiro se a sprint estourar:** #15 (Detalhe do jogo), porque não bloqueia nenhuma
 outra história da sprint.
 
-## Previsão das sprints seguintes
+## Sprints seguintes
 
-| Sprint | Release | Goal previsto | Itens | Pontos |
-|---|---|---|---|---|
-| **2** | 2 | Um cliente autenticado monta e ajusta o carrinho, e o sistema controla o ciclo de vida do pedido com transições validadas | #16 #17 #18 | 13 |
-| **3** | 2 | Um cliente finaliza a compra e recebe a chave, sem que ela possa ser vendida duas vezes | #19 #20 #21 | 13 |
-| **4** | 3 | O cliente acessa sua biblioteca e cancela pedidos, as áreas administrativas ficam protegidas e o catálogo é pesquisável | #22 #23 #24 #25 | 14 |
-| **5 (curta)** | 3 | O administrador mantém o catálogo e o estoque de chaves, e o cliente consulta seu histórico de pedidos | #26 #27 #28 | 10 |
-| **6** | 4 | A loja é operável pelo administrador e avaliada pelos clientes, pronta para o Demo Day | #29 #30 #31 #32 #33 + encerramento | 15 + encerramento |
+Não há previsão de goal nem de itens por sprint. A cada Planning, o time toma do topo do
+[backlog priorizado](priorizacao.md) o que cabe na capacidade, e o PO propõe o Sprint Goal. O roteiro abaixo é por **release**.
 
 ## Objetivo de cada release
 
-| Release | Entrega de valor |
-|---|---|
-| **1** (Sprints 0 e 1) | Time organizado e produto com **catálogo navegável e conta de cliente** |
-| **2** (Sprints 2 e 3) | **Compra ponta a ponta**: do carrinho à chave entregue, com preço congelado e sem chave duplicada |
-| **3** (Sprints 4 e 5) | **Loja operável**: biblioteca, cancelamento, busca e administração de jogos e chaves |
-| **4** (Sprint 6) | **Produto completo**: painel, indicadores, avaliações e Demo Day |
+| Release | Entrega de valor | Histórias previstas |
+|---|---|---|
+| **1** (Sprints 0 e 1) | Time organizado e produto com **catálogo navegável e conta de cliente** | #12 #13 #14 #15 |
+| **2** (Sprints 2 e 3) | **Compra ponta a ponta**: do carrinho à chave entregue, com preço congelado e sem chave duplicada | #16 a #21 |
+| **3** (Sprints 4 e 5) | **Loja operável**: biblioteca, cancelamento, busca e administração de jogos e chaves | #22 a #28 |
+| **4** (Sprint 6) | **Produto completo**: painel, indicadores, avaliações e Demo Day | #29 a #33 |
