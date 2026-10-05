@@ -37,12 +37,13 @@ Regras que fazem o quadro significar alguma coisa:
 | Campo | Tipo | Valores | Uso |
 |---|---|---|---|
 | **Story Points** | Número | 1, 2, 3, 5 (Fibonacci). Item de 8 ou mais deve ser quebrado | Estimativa de esforço relativo; base do velocity |
-| **Sprint** | Iteração | Sprint 0 a Sprint 6, com as datas do [calendário](calendario-de-cerimonias.md) | Em que sprint o item está (ou está previsto) |
+| **Sprint** | Iteração | Sprint 0 a Sprint 6, com as datas do [calendário](calendario-de-cerimonias.md) | Em que sprint o item está **comprometido**. Itens ainda não comprometidos ficam sem Sprint |
 | **Release** | Seleção única | Release 1 a Release 4 | A qual release o item pertence |
 | **Prioridade** | Seleção única | Alta, Média, Baixa | Ver escala abaixo |
 
-A Sprint de um item de Backlog indica a **previsão** do PO; ela só vira compromisso no Planning, quando o
-item passa para Pronto para a sprint.
+**Só itens comprometidos têm Sprint.** O Backlog fica sem Sprint (grupo "No Sprint" da view Backlog), ordenado por
+prioridade; o **Planning** atribui a Sprint e move o item para Pronto para a sprint. A **Release** continua preenchida
+como previsão de roteiro.
 
 ### Escala de prioridade
 
@@ -76,7 +77,7 @@ Criadas pela interface do GitHub (a API não cria views). Em cada uma, depois de
 | **Quadro** | Board | Column field: Status. Sem filtro. Cartões com Story Points, Prioridade e Sprint. Field sum: Story Points. Limite de coluna: Em andamento = 3 e Em revisão = 3 |
 | **Sprint atual** | Board | Igual ao Quadro, com filtro `sprint:@current` |
 | **Backlog** | Tabela | Campos: Title, Status, Story Points, Prioridade, Sprint, Release, Labels. Group by: Sprint. Field sum: Story Points. Ordem manual = ordem de execução |
-| **Roadmap** | Roadmap | Date fields: Sprint (início e fim). Group by: Release. Zoom: Month |
+| **Roadmap** | Roadmap | Date fields: Sprint (início e fim). Group by: Release. Zoom: Month. Mostra só itens que têm Sprint |
 | **Bugs** | Tabela | Filtro `label:bug`. Campos: Title, Status, Sprint, Assignees, Labels |
 
 O limite de **3 itens em Em andamento** equivale a 1 item por pessoa, e o de **3 em Em revisão** vem do
@@ -119,7 +120,7 @@ que ele fecha, e o merge fecha a issue.
 |---|---|
 | **Planning** | PO apresenta o Backlog ordenado; o time estima o que falta (Planning Poker), confirma a capacidade e move os itens aceitos para Pronto para a sprint |
 | **Daily assíncrona** (seg, qua, sex) | Cada um atualiza o status dos próprios itens e posta feito / próximo / impedimento |
-| **Refinamento** (meio da sprint) | PO e time detalham e estimam os itens das sprints seguintes; ajustam ordem e Sprint prevista |
+| **Refinamento** (meio da sprint) | PO e time detalham e estimam os itens do topo do backlog; ajustam a ordem do Backlog |
 | **Review** | PO aceita ou rejeita cada item; o aceite fica registrado na issue |
 | **Retrospectiva** | SM anexa os gráficos do Insights e registra ações; itens não concluídos voltam ao Backlog com nova previsão |
 
