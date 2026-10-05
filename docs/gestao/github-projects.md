@@ -68,40 +68,50 @@ posição: o de cima vem primeiro. Justificativa da ordem em
 
 ## 4. Views
 
-As views são criadas pela interface do GitHub (a API não cria views). Configuração esperada:
+Criadas pela interface do GitHub (a API não cria views). Em cada uma, depois de configurar, abra
+**View options** (engrenagem) e clique em **Save changes**.
 
 | View | Layout | Configuração |
 |---|---|---|
-| **Board da sprint** | Board | Agrupar por Status. Filtro: `sprint:@current` |
-| **Backlog** | Tabela | Campos: Título, Status, Story Points, Prioridade, Sprint, Release, Labels. Agrupar por Sprint. Ordem manual = ordem de execução |
-| **Roadmap** | Roadmap | Eixo: campo Sprint. Agrupar por Release |
-| **Bugs** | Tabela | Filtro: `label:bug`. Campos: Status, Sprint, Assignees |
+| **Quadro** | Board | Column field: Status. Sem filtro. Cartões com Story Points, Prioridade e Sprint. Field sum: Story Points. Limite de coluna: Em andamento = 3 e Em revisão = 3 |
+| **Sprint atual** | Board | Igual ao Quadro, com filtro `sprint:@current` |
+| **Backlog** | Tabela | Campos: Title, Status, Story Points, Prioridade, Sprint, Release, Labels. Group by: Sprint. Field sum: Story Points. Ordem manual = ordem de execução |
+| **Roadmap** | Roadmap | Date fields: Sprint (início e fim). Group by: Release. Zoom: Month |
+| **Bugs** | Tabela | Filtro `label:bug`. Campos: Title, Status, Sprint, Assignees, Labels |
+
+O limite de **3 itens em Em andamento** equivale a 1 item por pessoa, e o de **3 em Em revisão** vem do
+[CONTRIBUTING](../../CONTRIBUTING.md).
 
 ## 5. Métricas (Insights)
 
-Gráficos criados em **Insights** do projeto. Valores de referência para configurar:
+Gráficos criados em **Insights** (ícone de gráfico, canto superior direito do projeto), com
+**New chart**, **Configure** e **Save changes**.
 
-| Métrica | Configuração do gráfico | Como ler |
+| Gráfico | Configuração | Como ler |
 |---|---|---|
-| **Velocity** | Colunas. Eixo X: Sprint. Eixo Y: soma de Story Points. Filtro: `status:Concluído` | Pontos concluídos por sprint; base da capacidade da sprint seguinte |
-| **Burndown da sprint** | Histórico. Filtro: `sprint:@current`. Eixo Y: soma de Story Points restantes (itens fora de Concluído) | Linha plana por 3 dias = problema não relatado; investigar na daily |
-| **Fluxo** | Histórico, agrupado por Status, itens da sprint atual | Acúmulo em Em revisão indica gargalo de revisão ou de QA |
+| **Burn up** (já existe) | Gráfico histórico, filtro `sprint:@current` | Itens concluídos subindo contra o total da sprint. O trabalho que falta é a diferença entre as duas linhas, o equivalente ao burndown |
+| **Velocity** | Layout: Column. X-axis: Sprint. Y-axis: Sum de Story Points. Filtro `status:Concluído` | Pontos concluídos por sprint; base da capacidade da sprint seguinte |
+| **Fluxo** | Layout: Stacked column. X-axis: Sprint. Group by: Status | Acúmulo em Em revisão indica gargalo de revisão ou de QA |
 
-O SM tira um **print dos gráficos no dia da Review** e o anexa à ata da sprint
-([`atas/`](atas)), porque o histórico do GitHub Insights muda conforme os filtros. O texto da
-interpretação ("o que os números dizem e o que vamos fazer") também vai na ata.
+O GitHub Projects não tem um gráfico de burndown pronto: o **Burn up** cumpre esse papel, e a ata de
+cada Review registra a interpretação. O SM tira um **print dos gráficos no dia da Review** e o anexa à ata
+([`atas/`](atas)), porque o histórico muda conforme os filtros.
 
-## 6. Automações do quadro (Workflows do projeto)
+## 6. Automações do quadro (Workflows)
 
-Ativadas pela interface, em **Project → ⋯ → Workflows**. Ao trocar as opções de Status, confirme que cada
-workflow aponta para a coluna certa:
+Em **Project → ⋯ → Workflows**, abra cada workflow, clique em **Edit**, escolha o valor e clique em
+**Save and turn on workflow**. Como as opções de Status foram trocadas, confirme o valor de cada um:
 
-| Workflow | Efeito |
+| Workflow | Configuração |
 |---|---|
-| Auto-add to project | Issues e PRs do repositório entram sozinhos no quadro (Status inicial: Backlog) |
-| Item closed | Status passa para **Concluído** |
-| Pull request merged | Status passa para **Concluído** |
-| Item reopened | Status volta para **Em andamento** |
+| Item added to project | Status = **Backlog** |
+| Item reopened | Status = **Em andamento** |
+| Item closed | Status = **Concluído** |
+| Pull request merged | Status = **Concluído** |
+| Auto-add to project | Repositório `PedroLuvaz/gamekeys-gerencia-projeto`, filtro `is:issue`. Novas issues entram sozinhas no quadro (as existentes já foram adicionadas) |
+
+Os pull requests não são adicionados ao quadro: cada PR aparece como **Linked pull request** na issue
+que ele fecha, e o merge fecha a issue.
 
 ## 7. Rotina de uso por cerimônia
 
@@ -120,4 +130,4 @@ workflow aponta para a coluna certa:
 3. Criar os campos Story Points (Número), Sprint (Iteração), Release e Prioridade (Seleção única).
 4. Criar as views da seção 4 e os gráficos da seção 5.
 5. Ativar as automações da seção 6.
-6. Convidar integrantes e professora como colaboradores do repositório e do projeto.
+6. Em **Settings → Manage access**, convidar integrantes (Write) e professora (Read) como colaboradores.
