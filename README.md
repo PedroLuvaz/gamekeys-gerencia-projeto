@@ -54,9 +54,8 @@ Ambiente de desenvolvimento: [`docs/devops/ambiente-de-desenvolvimento.md`](docs
 | Integrante | GitHub | Papel na Release 1 (Sprints 0 e 1) |
 |---|---|---|
 | Pedro Lucas Vaz de Andrade | [@PedroLuvaz](https://github.com/PedroLuvaz) | **Product Owner** |
-| Wagner Tiburcio da Silva Junior | [@Wagnerxxdd](https://github.com/Wagnerxxdd) | **QA** (Analista de Qualidade) |
+| Wagner Tiburcio da Silva Junior | [@Wagnerxxdd](https://github.com/Wagnerxxdd) | **QA** (Analista de Qualidade) e **DevOps** |
 | Rodrigo Almeida Gomes | [@rodrigoalmei](https://github.com/rodrigoalmei) | **Scrum Master** |
-| _(a definir pela equipe)_ | — | **DevOps** — papel acumulado por um dos integrantes na Release 1 |
 
 Os papéis giram ao fim de cada release. Rodízio previsto na [programação da disciplina](#5-calendário):
 
