@@ -1,8 +1,8 @@
 # Calendário de cerimônias
 
 Datas extraídas da programação oficial da disciplina (_Gerência de Projeto 2026.2_). As aulas são às
-**terças e quintas** (em fevereiro, **segundas e quartas**) e cada aula é uma oportunidade de cerimônia
-ou de desenvolvimento.
+**terças e quintas** em 2026 e cada aula é uma oportunidade de cerimônia ou de desenvolvimento. Para fevereiro/2027,
+usamos as **datas** da programação (os dias da semana dela precisam de confirmação; ver seção 4).
 
 ---
 
@@ -29,9 +29,9 @@ professora.
 | **3** | 2 | ter 17/11 | ter 24/11 | qui 19/11 | **qui 26/11** — fim da Release 2 |
 | **4** | 3 | ter 01/12 | ter 08/12 | qui 03/12 | qui 10/12 |
 | **5 (curta)** | 3 | ter 15/12 | qui 17/12 (curto) | — | **ter 22/12** — fim da Release 3 |
-| **6** | 4 | seg 02/02 | seg 09/02 | qua 04/02 e qua 11/02 (ensaio do Demo Day) | seg 16/02 e **qua 18/02 — Demo Day final** |
+| **6** | 4 | 02/02 | 09/02 (ver nota sobre Carnaval) | 04/02 e 11/02 (ensaio do Demo Day) | 16/02 e **18/02 — Demo Day final** |
 
-Recesso: **23/12/2026 a 31/01/2027**, sem aulas. Prova final: segunda, 23/02/2027.
+Recesso: **23/12/2026 a 31/01/2027**, sem aulas. Prova final: 23/02/2027.
 
 ### Rodízio de papéis
 
@@ -40,7 +40,7 @@ Recesso: **23/12/2026 a 31/01/2027**, sem aulas. Prova final: segunda, 23/02/202
 | 1 | qui 29/10 | Sim |
 | 2 | qui 26/11 | Sim |
 | 3 | ter 22/12 | Sim |
-| 4 | qua 18/02 | Encerramento da disciplina |
+| 4 | 18/02 | Encerramento da disciplina |
 
 ## 3. Entregas e marcos da Sprint 0
 
@@ -60,6 +60,11 @@ Recesso: **23/12/2026 a 31/01/2027**, sem aulas. Prova final: segunda, 23/02/202
   documentado e com o Backlog da Release 4 pronto.
 - **Release 4 tem uma sprint longa** (02/02 a 18/02). O SM divide a sprint em marcos internos para que o
   Demo Day não dependa dos últimos dias.
+- **Dias da semana de fevereiro a confirmar com a professora:** a programação rotula 02/02, 09/02 e 16/02 como
+  segundas-feiras e 04/02, 11/02 e 18/02 como quartas-feiras, mas em 2027 essas datas caem em **terça** e **quinta**
+  (a prova final de 23/02 também cairia numa terça). Além disso, **09/02/2027 é terça-feira de Carnaval**.
+  Este calendário usa as datas como estão; se a aula de 09/02 não ocorrer, o refinamento da Sprint 6 vai para a
+  aula seguinte e o SM atualiza esta página.
 - **Divergência a confirmar com a professora:** as descrições dos papéis no Classroom citam a Release 4
   como Sprints 6 e 7, mas a programação oficial traz apenas a Sprint 6 na Release 4. Este calendário
   segue a **programação oficial**.
