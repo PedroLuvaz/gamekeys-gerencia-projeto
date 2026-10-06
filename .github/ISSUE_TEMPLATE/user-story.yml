@@ -1,5 +1,5 @@
 name: User Story
-description: Item do Product Backlog no formato "Como... quero... para..."
+description: Item do Product Backlog no formato "Eu como... preciso... de modo que..." com critérios em Gherkin
 title: "[Épico] Título da história"
 labels: ["user-story"]
 body:
@@ -13,17 +13,24 @@ body:
     attributes:
       label: História
       description: Quem precisa, o que precisa e por quê.
-      placeholder: "Como **<ator>**, quero **<ação>** para **<benefício>**."
+      placeholder: "Eu como **<perfil>**, preciso **<ação>**, de modo que **<benefício>**."
     validations:
       required: true
   - type: textarea
     id: criterios
     attributes:
       label: Critérios de aceite
-      description: Checklist verificável pelo QA. Prefira o formato Dado / Quando / Então. Evite "funcionar bem".
+      description: Cenários em Gherkin, com ao menos um de sucesso e um de exceção. Cada cenário é verificável pelo QA.
       placeholder: |
-        - [ ] **Dado** ..., **quando** ..., **então** ...
-        - [ ] ...
+        **Cenário 1 (sucesso): título**
+        - **Dado que** [contexto]
+        - **Quando** [ação]
+        - **Então** [resultado esperado]
+
+        **Cenário 2 (exceção): título**
+        - **Dado que** [contexto]
+        - **Quando** [ação]
+        - **Então** [resultado esperado]
     validations:
       required: true
   - type: input
@@ -43,7 +50,7 @@ body:
       label: Definition of Ready
       description: A história só entra em "Pronto para a sprint" com tudo marcado (ver docs/produto/definition-of-done.md).
       options:
-        - label: Está no formato Como... quero... para..., com ator identificado
-        - label: Os critérios de aceite são verificáveis
+        - label: Está no formato Eu como... preciso... de modo que..., com perfil identificado
+        - label: Os critérios estão em Gherkin (Dado que / Quando / Então), com cenário de sucesso e de exceção
         - label: Foi estimada e vale no máximo 5 pontos
         - label: Não depende de item que ficou fora da sprint

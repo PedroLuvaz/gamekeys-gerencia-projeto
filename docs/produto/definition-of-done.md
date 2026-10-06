@@ -17,8 +17,8 @@ retrospectiva.
 
 Uma história só passa para **Pronto para a sprint** se:
 
-- [ ] Está no formato **Como… quero… para…**, com o ator identificado
-- [ ] Tem **critérios de aceite verificáveis** (nada de "funcionar bem")
+- [ ] Está no formato **Eu como [perfil], preciso [ação], de modo que [benefício]**, com o perfil identificado
+- [ ] Tem **critérios de aceite em Gherkin** (**Dado que / Quando / Então**), com ao menos um cenário de **sucesso** e um de **exceção**
 - [ ] Foi **estimada** pelo time (Planning Poker) e vale **no máximo 5 pontos**
 - [ ] Referencia a **regra de negócio** correspondente, quando houver
 - [ ] Não depende de item que não esteja na sprint nem já concluído
@@ -33,7 +33,7 @@ puxado para a sprint.
 Um item só vai para **Concluído** se **todos** os pontos abaixo forem verdadeiros. O autor marca o
 checklist no PR e o **QA valida ao aprovar**.
 
-- [ ] Todos os **critérios de aceite** da issue foram validados pelo QA
+- [ ] Todos os **cenários de aceite** da issue foram validados pelo QA
 - [ ] O código foi **revisado e aprovado por outro integrante** em pull request
 - [ ] Há **testes automatizados** para os critérios comportamentais, e eles passam
 - [ ] O **CI está verde** na branch e permanece verde na `main` após o merge
@@ -71,6 +71,6 @@ Ao fim da sprint, na Review:
 
 ## 4. Por que o QA fecha a porta
 
-O QA da release aprova o PR somente depois de validar os critérios de aceite. Como o merge fecha a issue
+O QA da release aprova o PR somente depois de validar os cenários de aceite. Como o merge fecha a issue
 e o quadro move o item para Concluído, **ninguém conclui o próprio trabalho sozinho**. Isso dá ao papel
 de QA um registro objetivo no histórico do GitHub.
