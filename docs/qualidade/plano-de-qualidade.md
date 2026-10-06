@@ -7,7 +7,7 @@ garantida**. Versão inicial da Sprint 0; metas serão recalibradas com os dados
 
 ## 1. Objetivo
 
-Garantir que cada incremento entregue atenda aos critérios de aceite das histórias, respeite as
+Garantir que cada incremento entregue atenda aos cenários de aceite das histórias, respeite as
 [regras de negócio](../produto/regras-de-negocio.md) e a [Definition of Done](../produto/definition-of-done.md),
 com evidência rastreável no GitHub.
 
@@ -15,7 +15,7 @@ com evidência rastreável no GitHub.
 
 | # | Item | Por que importa | Como é garantido |
 |---|---|---|---|
-| Q1 | **Corretude funcional** | O cliente só percebe valor se o comportamento prometido acontece | Casos de teste derivados de cada critério de aceite, executados antes do PR ser aprovado |
+| Q1 | **Corretude funcional** | O cliente só percebe valor se o comportamento prometido acontece | Casos de teste derivados de cada cenário de aceite (sucesso e exceção), executados antes do PR ser aprovado |
 | Q2 | **Regras de negócio protegidas** | Chave duplicada e preço alterado são os defeitos mais caros do produto | Cada RN tem teste automatizado que a prova; RN-02 tem teste de concorrência |
 | Q3 | **Testes automatizados** | Evitam regressão e documentam o comportamento | Critério comportamental tem teste de API; regra com mais de uma ramificação tem teste de serviço |
 | Q4 | **Revisão de código** | Um segundo par de olhos pega o que o autor não vê | Todo PR é revisado por outro integrante, em até 24 h |
@@ -28,17 +28,20 @@ com evidência rastreável no GitHub.
 
 Metas **iniciais**: sem histórico, são hipóteses a recalibrar na retrospectiva da Sprint 1.
 
-| ID | Métrica | Fórmula | Fonte | Meta inicial | Item |
-|---|---|---|---|---|---|
-| **M1** | Conformidade com o DoD | Itens concluídos com checklist de DoD completo ÷ itens concluídos | Checklist dos PRs mesclados | 100% | Q7 |
-| **M2** | Cobertura de critérios de aceite | Critérios de aceite com ao menos 1 caso de teste ÷ critérios de aceite da sprint | [Plano de testes](plano-de-testes-sprint-1.md) | 100% até o Planning | Q1, Q6 |
-| **M3** | Taxa de aprovação dos casos de teste | Casos aprovados ÷ casos executados | Registro de execução do plano de testes | ≥ 90% na 1ª rodada; 100% na regressão final | Q1 |
-| **M4** | Bugs abertos por severidade | Contagem de issues `bug` abertas, por severidade | Issues com label `bug` | 0 críticos e 0 altos abertos na Review | Q8 |
-| **M5** | Bugs encontrados × corrigidos | Corrigidos na sprint ÷ encontrados na sprint | Issues `bug` por sprint | ≥ 80% | Q8 |
-| **M6** | Escape de defeitos | Bugs achados depois do item em Concluído ÷ total de bugs da sprint | Issues `bug` ligadas a itens já concluídos | Tendência decrescente | Q1, Q7 |
-| **M7** | Taxa de sucesso do pipeline | Execuções com sucesso ÷ execuções totais | Aba Actions (`gh run list`) | ≥ 80% geral; 100% na `main` | Q5 |
-| **M8** | Tempo para corrigir build quebrado | Da execução vermelha até a próxima verde | Aba Actions | ≤ 1 dia útil | Q5 |
-| **M9** | Tempo até a primeira revisão de PR | Da abertura do PR até a primeira revisão | Histórico dos PRs | ≤ 24 h | Q4 |
+| ID | Métrica | Fórmula | Forma de medição (fonte) | Meta inicial | Responsável | Item |
+|---|---|---|---|---|---|---|
+| **M1** | Conformidade com o DoD | Itens concluídos com checklist de DoD completo ÷ itens concluídos | Checklist dos PRs mesclados | 100% | QA | Q7 |
+| **M2** | Cobertura de cenários de aceite | Cenários de aceite (Dado que / Quando / Então) com ao menos 1 caso de teste ÷ cenários de aceite da sprint | [Plano de testes](plano-de-testes-sprint-1.md) | 100% até o Planning | QA | Q1, Q6 |
+| **M3** | Taxa de aprovação dos casos de teste | Casos aprovados ÷ casos executados | Registro de execução do plano de testes | ≥ 90% na 1ª rodada; 100% na regressão final | QA | Q1 |
+| **M4** | Bugs abertos por severidade | Contagem de issues `bug` abertas, por severidade | Issues com label `bug` | 0 críticos e 0 altos abertos na Review | QA | Q8 |
+| **M5** | Bugs encontrados × corrigidos | Corrigidos na sprint ÷ encontrados na sprint | Issues `bug` por sprint | ≥ 80% | QA | Q8 |
+| **M6** | Escape de defeitos | Bugs achados depois do item em Concluído ÷ total de bugs da sprint | Issues `bug` ligadas a itens já concluídos | Tendência decrescente | QA | Q1, Q7 |
+| **M7** | Taxa de sucesso do pipeline | Execuções com sucesso ÷ execuções totais | Aba Actions (`gh run list`) | ≥ 80% geral; 100% na `main` | DevOps | Q5 |
+| **M8** | Tempo para corrigir build quebrado | Da execução vermelha até a próxima verde | Aba Actions | ≤ 1 dia útil | DevOps | Q5 |
+| **M9** | Tempo até a primeira revisão de PR | Da abertura do PR até a primeira revisão | Histórico dos PRs | ≤ 24 h | Scrum Master | Q4 |
+
+**Responsável** é quem mede a métrica e a leva à retrospectiva: o **QA** cuida de M1 a M6, o **DevOps** de M7 e M8
+e o **Scrum Master** de M9. O QA consolida todas no relatório de qualidade.
 
 **Como coletar** (todos a partir do GitHub, sem planilha paralela):
 
@@ -83,11 +86,11 @@ Princípios:
 - **Sem mock de banco** nos testes de comportamento: o comportamento transacional é o que se testa. Cada
   teste usa um banco isolado.
 - **Sem meta de cobertura percentual.** Teste escrito para inflar número é desperdício; o critério é
-  "todo critério de aceite tem teste".
+  "todo cenário de aceite tem teste".
 - Dados de teste são **fictícios**; nenhuma chave de ativação real entra no projeto.
 - Teste que falha de forma intermitente é tratado como bug do teste e corrigido, não repetido até passar.
 
-**Critério de entrada para testar um item:** PR aberto, CI verde e critérios de aceite claros na issue.
+**Critério de entrada para testar um item:** PR aberto, CI verde e cenários de aceite claros na issue.
 **Critério de saída (item):** todos os casos de teste do item aprovados e DoD validado.
 **Critério de saída (sprint):** nenhum bug crítico ou alto aberto; regressão executada; relatório publicado.
 
@@ -102,7 +105,7 @@ Princípios:
 
 | Momento | Atividade |
 |---|---|
-| **Planning** | Revisa os critérios de aceite e o DoR dos itens; confirma que cada critério é testável |
+| **Planning** | Revisa os cenários de aceite e o DoR dos itens; confirma que cada cenário é testável |
 | **Início da sprint** | Publica o plano de testes e os casos de teste da sprint; atualiza M2 |
 | **Durante** | Executa os casos conforme os PRs chegam; registra bugs; aprova ou devolve PRs |
 | **Antes da Review** | Roda a regressão e fecha o relatório de qualidade da sprint |

@@ -57,6 +57,15 @@ Ambiente de desenvolvimento: [`docs/devops/ambiente-de-desenvolvimento.md`](docs
 | Wagner Tiburcio da Silva Junior | [@Wagnerxxdd](https://github.com/Wagnerxxdd) | **QA** (Analista de Qualidade) e **DevOps** |
 | Rodrigo Almeida Gomes | [@rodrigoalmei](https://github.com/rodrigoalmei) | **Scrum Master** |
 
+### Responsabilidades de cada papel
+
+| Papel | Responsabilidades |
+|---|---|
+| **Product Owner** (Pedro) | Dono do produto. Mantém o Product Backlog (user stories com critérios de aceite em Gherkin), define a prioridade e a ordem, propõe o Sprint Goal, acorda a DoR e a DoD com o time, **aceita ou rejeita** cada item na Review e publica as release notes |
+| **Scrum Master** (Rodrigo) | Cuida do processo. Configura e mantém o quadro, facilita Planning, Review e Retrospectiva e **escreve as atas**, acompanha burn up, velocity e fluxo, remove impedimentos e mantém o registro de riscos e a saúde do time |
+| **QA** (Wagner) | Define e mede a qualidade. Plano de qualidade, plano e casos de teste ligados às histórias, **registro de bugs** (passos, evidência, severidade), verificação da DoD, regressão e relatório de qualidade da release. **Aprova os PRs** depois de validar os cenários de aceite |
+| **DevOps** (Wagner, acumulando com o QA na Release 1) | Estrutura do repositório (branches, modelos de issue e de PR), **pipeline de CI** (build e testes a cada push), ambiente de desenvolvimento documentado e, a partir da Release 2, versionamento e deploy |
+
 Os papéis giram ao fim de cada release. Rodízio previsto na [programação da disciplina](#5-calendário):
 
 | Release | Sprints | Rotação de papéis em |
@@ -81,12 +90,23 @@ Os papéis giram ao fim de cada release. Rodízio previsto na [programação da 
 
 Cerimônias, horários e regras: [`docs/gestao/calendario-de-cerimonias.md`](docs/gestao/calendario-de-cerimonias.md).
 
+### Entregas macro por release
+
+| Release | Sprints | Entrega macro | Histórias previstas |
+|---|---|---|---|
+| **1** | 0 e 1 (06/10 a 29/10) | Time organizado (repositório, quadro, backlog, planos de qualidade e riscos, CI) e produto com **catálogo navegável e conta de cliente** | #12 #13 #14 #15 |
+| **2** | 2 e 3 (03/11 a 26/11) | **Compra ponta a ponta**: do carrinho à chave entregue, com preço congelado e sem chave duplicada | #16 a #21 |
+| **3** | 4 e 5 (01/12 a 22/12) | **Loja operável**: biblioteca, cancelamento, busca e administração de jogos e chaves | #22 a #28 |
+| **4** | 6 (02/02 a 18/02/2027) | **Produto completo**: painel, indicadores, avaliações e Demo Day | #29 a #33 |
+
+Histórias de prioridade Baixa (#34 a #37) entram se sobrar capacidade. Detalhes em [`docs/produto/sprint-goals.md`](docs/produto/sprint-goals.md).
+
 ## 6. Gestão do projeto
 
 | O quê | Onde |
 |---|---|
 | Quadro do time (GitHub Projects) | [GameKeys — Gerência de Projeto](https://github.com/users/PedroLuvaz/projects/2) · configuração em [`docs/gestao/github-projects.md`](docs/gestao/github-projects.md) |
-| Product Backlog | [Issues com label `user-story`](https://github.com/PedroLuvaz/gamekeys-gerencia-projeto/issues?q=label%3Auser-story), ordenadas no quadro |
+| Product Backlog | [Issues com label `user-story`](https://github.com/PedroLuvaz/gamekeys-gerencia-projeto/issues?q=label%3Auser-story) no formato *Eu como… preciso… de modo que…*, com critérios em Gherkin, ordenadas no quadro |
 | Visão, escopo e regras de negócio | [`docs/produto/`](docs/produto) |
 | Priorização justificada e carga por sprint | [`docs/produto/priorizacao.md`](docs/produto/priorizacao.md) |
 | Definition of Ready e Definition of Done | [`docs/produto/definition-of-done.md`](docs/produto/definition-of-done.md) |
