@@ -135,11 +135,12 @@ O diretório `frontend/` será criado na Sprint 1, junto com a primeira históri
 | Release | Sprint | Objetivo | Status |
 |---|---|---|---|
 | 1 | 0 | Repositório, board, backlog inicial e planos de gestão e qualidade | Em andamento |
-| 1 | 1 | Visitante vê o catálogo; cliente cria conta e entra | Planejada |
-| 2 | 2 | Cliente monta o carrinho | Prevista |
-| 2 | 3 | Compra ponta a ponta com entrega de chave | Prevista |
-| 3 | 4 | Biblioteca, cancelamento, controle de acesso e busca | Prevista |
-| 3 | 5 | Administrador gerencia jogos e chaves | Prevista |
-| 4 | 6 | Painel, indicadores, avaliações e Demo Day | Prevista |
+| 1 | 1 | Visitante vê o catálogo; cliente cria conta e entra (proposta do PO) | Planning em 20/10 |
+| 2 | 2 | Definido no Planning | A planejar (03/11) |
+| 2 | 3 | Definido no Planning | A planejar (17/11) |
+| 3 | 4 | Definido no Planning | A planejar (01/12) |
+| 3 | 5 | Definido no Planning | A planejar (15/12) |
+| 4 | 6 | Definido no Planning | A planejar (02/02) |
 
-Sprints 2 a 6 são previsões: o escopo é confirmado em cada Planning, com base na velocity medida.
+No quadro, só a Sprint 0 tem itens atribuídos. O Sprint Goal e os itens de cada sprint são definidos no Planning,
+com base na velocity medida. O roteiro por release está em [`docs/produto/sprint-goals.md`](docs/produto/sprint-goals.md).
